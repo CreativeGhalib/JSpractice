@@ -1,32 +1,62 @@
+/***
 
-// Simple BMI Calculator
+BMI Calculator and Health Category
+
+Create a JavaScript program that calculates the Body Mass Index (BMI) and assigns a health category based on the BMI value. Use nested if-else statements to determine the health category.
+
+    - Calculate BMI using the formula: BMI = weight (kg) / (height (m))^2
+    - BMI < 18.5, you are underweight.
+    - BMI >= 18.5 and BMI <=24.9, you are normal.
+    - BMI >=25 and BMI <= 29.9, you are overweight.
+    - Otherwise, you are obese.
+
+*/
 let weight = 65;
 
 let height = 5.5;
 
-let heightInMeters = height * 0.3048;
+if (typeof weight === 'string') weight = parseFloat(weight);
+if (typeof height === 'string') height = parseFloat(height);
 
-let bmi = weight / (heightInMeters * heightInMeters);
-
-console.log('Your weight: ' + weight + ' kg');
-console.log('Your height: ' + height + ' feet');
-console.log('Your BMI: ' + bmi.toFixed(1));
-
-console.log('');
-console.log('Result:');
-
-if (bmi < 18.5) {
-  console.log('You are Underweight ');
-  console.log(' Try to eat more healthy food!');
-} else if (bmi < 25) {
-  console.log('You are Normal Weight ');
-  console.log('Great job! Keep it up!');
-} else if (bmi < 30) {
-  console.log('You are Overweight ');
-  console.log('Try some exercise and eat healthy!');
+let heightInMeters;
+if (isNaN(height) || isNaN(weight)) {
+  console.error('Invalid input: weight and height must be numbers.');
 } else {
-  console.log('You are Obese ');
-  console.log('Please talk to a doctor for help!');
+  if (height > 3) {
+    heightInMeters = height * 0.3048;
+    console.log('Interpreting height as feet.');
+    console.log('Your height: ' + height + ' feet');
+  } else {
+    heightInMeters = height;
+    console.log('Interpreting height as meters.');
+    console.log('Your height: ' + height + ' meters');
+  }
+
+  if (heightInMeters <= 0) {
+    console.error('Invalid height value: must be greater than 0.');
+  } else {
+    let bmi = weight / (heightInMeters * heightInMeters);
+
+    console.log('Your weight: ' + weight + ' kg');
+    console.log('Your BMI: ' + bmi.toFixed(1));
+
+    console.log('');
+    console.log('Result:');
+
+    if (bmi < 18.5) {
+      console.log('You are Underweight ');
+      console.log(' Try to eat more healthy food!');
+    } else if (bmi < 25) {
+      console.log('You are Normal Weight ');
+      console.log('Great job! Keep it up!');
+    } else if (bmi < 30) {
+      console.log('You are Overweight ');
+      console.log('Try some exercise and eat healthy!');
+    } else {
+      console.log('You are Obese ');
+      console.log('Please talk to a doctor for help!');
+    }
+  }
 }
 
 /***
@@ -37,7 +67,35 @@ Free Drinks
 */
 let bPrice = 300;
 if (bPrice > 500) {
-  console.log("free Coke");
+  console.log('free Coke');
 } else {
-  console.log("Plz pay price 30tk for Coke");
+  console.log('Plz pay price 30tk for Coke');
+}
+
+/***
+
+Grade Calculator
+
+Create a simple JavaScript program that takes a student's score as input and returns their corresponding grade based on the following grading scale:
+
+    A: 90-100
+    B: 80-89
+    C: 70-79
+    D: 60-69
+    F: 0-59
+
+***/
+let score = 85;
+if (score >= 90 && score <= 100) {
+  console.log('You got A Grade!!');
+} else if (score >= 80 && score < 90) {
+  console.log('You got B Grade!!');
+} else if (score >= 70 && score < 80) {
+  console.log('You got C Grade!!');
+} else if (score >= 60 && score < 70) {
+  console.log('You got D Grade!!');
+} else if (score >= 0 && score < 60) {
+  console.log('You got F Grade!!');
+} else {
+  console.log('Invalid Score!');
 }
