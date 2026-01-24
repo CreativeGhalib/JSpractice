@@ -28,3 +28,16 @@ if (bmi < 18.5) {
   console.log('You are Obese ');
   console.log('Please talk to a doctor for help!');
 }
+
+/***
+
+Free Drinks
+    - Burger more than 500tk: free Coke
+    - Else Coke: 30tk
+*/
+let bPrice = 300;
+if (bPrice > 500) {
+  console.log("free Coke");
+} else {
+  console.log("Plz pay price 30tk for Coke");
+}
