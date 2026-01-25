@@ -153,3 +153,18 @@ console.log(result);
 // using ternary operator
 result = num1 > num2 ? num1 * 2 : num1 + num2;
 console.log(result);
+
+
+// ##parseInt & number  to String,string  to number convert.(string to number using parseFloat)
+
+let a = '100';
+let b = 50;
+let c = '45.67';
+let d = "1234";
+let newA = parseInt(a);
+let newB = String(b);
+let newC = parseFloat(c);
+let newD = Number(d);
+
+console.log(newA, newB, newC, newD);
+console.log(typeof(newA), typeof(newB),typeof(newC), typeof(newD));
