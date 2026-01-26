@@ -22,3 +22,11 @@ if (a.toLowerCase() === b.toLowerCase()) {
 } else {
   console.log("Value not same");
 }
+console.log(friends.indexOf("MESBAH")
+);
+console.log(friends);
+console.log(friends.indexOf("Bob"));
+let newwfrnd = friends.map(f => f.toLowerCase());
+console.log(newwfrnd);
+
+console.log(Array.isArray(friends));
