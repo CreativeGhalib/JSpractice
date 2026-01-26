@@ -84,3 +84,28 @@ if (books.includes("javascript")) {
   console.log("books not availble ,try again tomorrow!");
 }
 // console.log(books.includes("javascript"));
+// 4. Checking if it's an Array
+// Instructions:
+//
+// Create different variables, each containing either an array or a non-array value.
+//
+// Now use isArray to check if each variable is an array.
+//
+// Print a message to the console indicating whether each variable is an array or not.
+// cspell:words Hasan cgpa
+let studentsName = ['Hasan', 'James', 'LRB'];
+let studentRoll = {
+  roll: 12,
+  cgpa: 3.4,
+};
+
+if (Array.isArray(studentsName)) {
+  console.log("Yes it is Array");
+} else {
+  console.log("Not an Array!!");
+}
+if (Array.isArray(studentRoll)) {
+  console.log('Yes it is Array');
+} else {
+  console.log('Not an Array!!');
+}
