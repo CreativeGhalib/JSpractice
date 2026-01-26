@@ -56,3 +56,16 @@ console.log(fruits[3]);
 // Difference: splice() remove kora value return kore, index assignment kore na. Duto method-ei main array update hoy.
 fruits[2] = 'jambura';
 console.log(fruits);
+
+
+// Declare an array of 3 tourist destinations
+// Add a new tourist destination to your tourist array
+// Add two more to your array
+// Remove the last tourist destination you have added
+// display the final array as output
+let tourisTdestinations = ['dhaka', 'sylhet', 'coxsbazar'];
+tourisTdestinations.push('sundarban');
+tourisTdestinations.push('bandarban', 'saintmartin');
+let rejectedDestination = tourisTdestinations.pop();
+console.log(tourisTdestinations);
+console.log(`rejectedDestination: ${rejectedDestination}`);
