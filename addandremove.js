@@ -13,3 +13,12 @@ console.log(friends.indexOf("Bob"));
 console.log(friends.includes('Bob'));
 length=friends[2].length;
 console.log(`Lenth is ${length}`);
+let a='Hello';
+console.log(a.length);
+let b = 'hello';
+// Use of uppercase and lower case
+if (a.toLowerCase() === b.toLowerCase()) {
+  console.log("value is same");
+} else {
+  console.log("Value not same");
+}
