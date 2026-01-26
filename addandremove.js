@@ -69,3 +69,18 @@ tourisTdestinations.push('bandarban', 'saintmartin');
 let rejectedDestination = tourisTdestinations.pop();
 console.log(tourisTdestinations);
 console.log(`rejectedDestination: ${rejectedDestination}`);
+// 3. Checking Array Membership with ‘includes’
+// Instructions:
+
+// Create an array of books containing different book.
+
+// Use the includes method to check if the array contains a javascript book.
+
+// Print a message to the console indicating whether the element is present in the array or not.
+let books = ['math', 'english', 'bangla', 'javascript', 'science'];
+if (books.includes("javascript")) {
+  console.log("book is availbale");
+} else {
+  console.log("books not availble ,try again tomorrow!");
+}
+// console.log(books.includes("javascript"));
