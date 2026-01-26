@@ -43,7 +43,6 @@ console.log(someFriends);
 allFriends.splice(2, 1, 'Zara');
 console.log(allFriends);
 
-
 // 1. Declare an array
 // Declare an array with 5 elements containing fruits
 // console log the 3rd index element
@@ -53,5 +52,7 @@ console.log(allFriends);
 let fruits = ['apple', 'banana', 'orange', 'mango', 'grape'];
 console.log(fruits);
 console.log(fruits[3]);
+// Findings: Index assignment (fruits[2] = ...) and splice() diye array element replace kora jai.
+// Difference: splice() remove kora value return kore, index assignment kore na. Duto method-ei main array update hoy.
 fruits[2] = 'jambura';
 console.log(fruits);
