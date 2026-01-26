@@ -30,3 +30,12 @@ let newwfrnd = friends.map(f => f.toLowerCase());
 console.log(newwfrnd);
 
 console.log(Array.isArray(friends));
+const joinedFriends = friends.join('|');
+console.log(joinedFriends);
+
+// concat/join
+const moreFriends = ['David', 'Eve'];
+const allFriends = friends.concat(moreFriends);
+console.log(allFriends);
+
+
