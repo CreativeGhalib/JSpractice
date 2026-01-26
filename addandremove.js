@@ -128,12 +128,15 @@
 // console.log(roll2);
 // parseInt
 
-let roll = '30';
-let roll2 = String(roll);
+// let roll = '30';
+// let roll2 = String(roll);
 
-console.log(roll2);
+// console.log(roll2);
 
-let roll = '30';
-let roll2 = Number(roll);
+// let roll = '30';
+// let roll2 = Number(roll);
 
-console.log(roll2);
+// console.log(roll2);
+let x = 2.289888;
+console.log(x);
+console.log(x.toFixed(3));
