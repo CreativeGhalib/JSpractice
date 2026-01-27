@@ -12,8 +12,16 @@
 // console.log(fruits);
 
 
-const number = 7;
-if (number < 1) {
-  console.log("Numberchoto ekta number paise");
+// const number = 7;
+// if (number < 1) {
+//   console.log("Numberchoto ekta number paise");
+// }
+// console.log("something else is cooking");
+
+
+
+// while loop
+const number = 0;
+while(number < 5) {
+    console.log(" number is less than 5");
 }
-console.log("something else is cooking");
