@@ -137,6 +137,15 @@
 // let roll2 = Number(roll);
 
 // console.log(roll2);
-let x = 2.289888;
-console.log(x);
-console.log(x.toFixed(3));
+// let x = 2.289888;
+// console.log(x);
+// console.log(x.toFixed(3));
+//
+// while loop
+let number =12;
+while (number > 7) {
+  console.log("number is ",number);
+  number--;
+}
+
+
