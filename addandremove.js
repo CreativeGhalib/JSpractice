@@ -142,10 +142,22 @@
 // console.log(x.toFixed(3));
 //
 // while loop
-let number =12;
-while (number > 7) {
-  console.log("number is ",number);
+// let number =12;
+// while (number > 7) {
+//   console.log("number is ",number);
+//   number--;
+// }
+
+// for of loop
+//
+// let number = 10;
+// while (number<100) {
+//   console.log(number);
+//   number
+// }
+//   console.log("kissu nai");
+let number = 100;
+while (number > 1) {
+  console.log(number);
   number--;
 }
-
-
