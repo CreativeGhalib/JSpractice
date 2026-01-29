@@ -205,3 +205,18 @@ while (num < 100) {
 }
 console.log("First power of 2 >= 100:", num);
 
+let n1 = 1;
+let total1 = 0;
+while (n1 <= 5) {
+  total1 += n1 * n1;
+  n1++;
+}
+console.log("Sum of squares 1..5:", total1);
+
+let n2 = 1;
+let factorial = 1;
+while (n2 <= 5) {
+  factorial *= n2;
+  n2++;
+}
+console.log("Factorial 5:", factorial);
