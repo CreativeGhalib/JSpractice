@@ -182,3 +182,9 @@ while (i <= 5) {
   i++;
 }
 
+// 2) Count down from 5 to 1
+let j = 5;
+while (j >= 1) {
+  console.log(j);
+  j--;
+}
