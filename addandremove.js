@@ -195,3 +195,13 @@ while (k <= 10) {
   sum += k;
   k++;
 }
+console.log('Sum:', sum);
+
+
+// 4) Loop until a condition is met
+let num = 1;
+while (num < 100) {
+  num *= 2;
+}
+console.log("First power of 2 >= 100:", num);
+
