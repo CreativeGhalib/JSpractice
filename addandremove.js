@@ -188,3 +188,10 @@ while (j >= 1) {
   console.log(j);
   j--;
 }
+// 3) Sum numbers 1..10
+let sum = 0;
+let k = 1;
+while (k <= 10) {
+  sum += k;
+  k++;
+}
