@@ -156,8 +156,29 @@
 //   number
 // }
 //   console.log("kissu nai");
-let number = 100;
-while (number > 1) {
-  console.log(number);
-  number--;
+// let number = 100;
+// while (number > 1) {
+//   console.log(number);
+//   number--;
+// }
+//
+// let sum = 0;
+// let number = 1;
+// while (number < 10) {
+//   console.log(number);
+//   sum += number;
+//   console.log(`sum=sum+number ${sum}`);
+//   number++
+
+// }
+
+let str = 'Mississippi';
+console.log(str.indexOf('i',5));
+
+// 1) Count up from 1 to 5
+let i = 1;
+while (i <= 5) {
+  console.log(i);
+  i++;
 }
+
