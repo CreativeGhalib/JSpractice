@@ -172,51 +172,79 @@
 
 // }
 
-let str = 'Mississippi';
-console.log(str.indexOf('i',5));
+// let str = 'Mississippi';
+// console.log(str.indexOf('i',5));
 
-// 1) Count up from 1 to 5
-let i = 1;
-while (i <= 5) {
-  console.log(i);
-  i++;
-}
+// // 1) Count up from 1 to 5
+// let i = 1;
+// while (i <= 5) {
+//   console.log(i);
+//   i++;
+// }
 
-// 2) Count down from 5 to 1
-let j = 5;
-while (j >= 1) {
-  console.log(j);
-  j--;
-}
-// 3) Sum numbers 1..10
+// // 2) Count down from 5 to 1
+// let j = 5;
+// while (j >= 1) {
+//   console.log(j);
+//   j--;
+// }
+// // 3) Sum numbers 1..10
+// let sum = 0;
+// let k = 1;
+// while (k <= 10) {
+//   sum += k;
+//   k++;
+// }
+// console.log('Sum:', sum);
+
+
+// // 4) Loop until a condition is met
+// let num = 1;
+// while (num < 100) {
+//   num *= 2;
+// }
+// console.log("First power of 2 >= 100:", num);
+
+// let n1 = 1;
+// let total1 = 0;
+// while (n1 <= 5) {
+//   total1 += n1 * n1;
+//   n1++;
+// }
+// console.log("Sum of squares 1..5:", total1);
+
+// let n2 = 1;
+// let factorial = 1;
+// while (n2 <= 5) {
+//   factorial *= n2;
+//   n2++;
+// }
+// console.log("Factorial 5:", factorial);
+/*
+
+Write a loop 1 to 200. Use break to exit the loop once you find 100.
+
+*/
+
+// let number = 1;
+// while (number <= 200) {
+//   console.log(number);
+//   if (number == 100) {
+//     break;
+//   }
+//   number++;
+// }
+/*
+Write a while loop that adds numbers starting from 1, but stops (using break) as soon as the sum reaches or exceeds 100
+*/
+
+let number = 1;
 let sum = 0;
-let k = 1;
-while (k <= 10) {
-  sum += k;
-  k++;
+while (number <= 100) {
+  sum += number;
+  if (sum >= 100) {
+    break;
+  }
+  number++;
 }
-console.log('Sum:', sum);
-
-
-// 4) Loop until a condition is met
-let num = 1;
-while (num < 100) {
-  num *= 2;
-}
-console.log("First power of 2 >= 100:", num);
-
-let n1 = 1;
-let total1 = 0;
-while (n1 <= 5) {
-  total1 += n1 * n1;
-  n1++;
-}
-console.log("Sum of squares 1..5:", total1);
-
-let n2 = 1;
-let factorial = 1;
-while (n2 <= 5) {
-  factorial *= n2;
-  n2++;
-}
-console.log("Factorial 5:", factorial);
+console.log("Sum:", sum);
