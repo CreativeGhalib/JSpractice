@@ -284,15 +284,32 @@ Write a loop that goes from 1 to 100, but stops (using break) when it encounters
 // console.log(number);
 /*
 Write a loop that goes from 1 to 100, but stops (using break) when it encounters the first square number (like 4, 9, 16, etc.)
-*/
-let n = 2;
-while (n <= 100) {
-  let i = 2;
-  while (i * i < n) i++;
-  if (i * i === n) {
-    console.log(n);
-    console.log("perfect square", n);
-  }
-  n++;
-  console.log(n);
+// */
+// let n = 2;
+// while (n <= 100) {
+//   let i = 2;
+//   while (i * i < n) i++;
+//   if (i * i === n) {
+//     console.log(n);
+//     console.log("perfect square", n);
+//   }
+//   n++;
+//   console.log(n);
+// }
+/***
+
+Implement a countdown timer that counts down from 21 to 15. using for loop
+
+ */
+
+
+/*programming hero*/
+// for (let i = 21; i >= 15; i--){
+//   console.log(i);
+// }
+// using while loop
+let number = 21;
+while (number >= 15) {
+  console.log(number);
+  number--
 }
