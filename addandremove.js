@@ -319,8 +319,13 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 "I will invest at least 6 hrs every single day for next 60 days!" this message 60 times. So display this.
 
  */
-let i = 1;
-while (i <= 60) {
-  console.log(i,'I will invest at least 6 hrs every single day for next 60 days!');
-  i++;
+// let i = 1;
+// while (i <= 60) {
+//   console.log(i,'I will invest at least 6 hrs every single day for next 60 days!');
+//   i++;
+// }
+for (let i = 1; i <= 30; i++){
+  if (i % 5 === 0) {
+    console.log(i);
+  }
 }
