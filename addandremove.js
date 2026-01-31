@@ -308,8 +308,19 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 //   console.log(i);
 // }
 // using while loop
-let number = 21;
-while (number >= 15) {
-  console.log(number);
-  number--
+// let number = 21;
+// while (number >= 15) {
+//   console.log(number);
+//   number--
+// }
+
+/***
+
+"I will invest at least 6 hrs every single day for next 60 days!" this message 60 times. So display this.
+
+ */
+let i = 1;
+while (i <= 60) {
+  console.log(i,'I will invest at least 6 hrs every single day for next 60 days!');
+  i++;
 }
