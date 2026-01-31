@@ -331,6 +331,13 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 // }
 for (let i = 1; i <= 30; i++) {
   if (i % 5 === 0 || i%2===0) {
-    console.log(i);
+
+    if (i === 16) {
+      continue;
+    }
+    if (i === 24) {
+      break;
+    }
   }
+  console.log(i);
 }
