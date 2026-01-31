@@ -251,13 +251,48 @@ Write a while loop that adds numbers starting from 1, but stops (using break) as
 /*
 Write a loop that goes from 1 to 100, but stops (using break) when it encounters the first square number (like 4, 9, 16, etc.)
 */
-let number = 1;
-let sum = 0;
-while (number <= 100) {
-  sum = sum + number;
-  if (sum >= 100) {
-    break;
+// let number = 1;
+// let sum = 0;
+
+// while (number <= 100) {
+
+//   sum = sum + number;
+
+//   if(sum)
+
+//   let i = 1;
+
+//   if( )
+
+
+//   while (i * i <= number) {
+//     if (i * i === number) {
+//       isSquare = true;
+//       break;
+//     }
+//     i++;
+//   }
+
+
+//   if (number > 1 && isSquare) {
+//     console.log('First square:', number);
+//     break;
+//   }
+
+//   number++;
+// }
+// console.log(number);
+/*
+Write a loop that goes from 1 to 100, but stops (using break) when it encounters the first square number (like 4, 9, 16, etc.)
+*/
+let n = 2;
+while (n <= 100) {
+  let i = 2;
+  while (i * i < n) i++;
+  if (i * i === n) {
+    console.log(n);
+    console.log("perfect square", n);
   }
-  number++;
+  n++;
+  console.log(n);
 }
-console.log("sum",sum);
