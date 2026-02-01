@@ -415,3 +415,12 @@ console.log(newSentence);
 const xyz = ['My', 'name', 'is', 'Ghalib'];
 console.log(xyz.join(" "));
 // Ps: join & split boths working nature is  vice versa
+
+
+
+// concatination    ...newSentence.what is concat?
+let firdstName = "Mesbah ";
+let lastName = "Ghalib";
+
+let myFullname = firdstName.concat(lastName);
+console.log(myFullname);
