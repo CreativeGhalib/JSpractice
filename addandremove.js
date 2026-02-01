@@ -445,6 +445,16 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 
 
 // reverse only array te kaj kore ,tai age split kore " " use kore then reverse() and then join(')
-const sentence = "i am learning webdev";
-const reversed = sentence.split('').reverse().join("");
-console.log(reversed);
+// const sentence = "i am learning webdev";
+// const reversed = sentence.split('').reverse().join("");
+// console.log(reversed);
+
+
+// ** now i am going to practice object
+
+const bottle = {
+  brand: 'apple',
+  price: 15,
+  isPremium: true
+}
+console.log(bottle.isPremium);
