@@ -368,11 +368,20 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 //   console.log(fruit);
 // }
 // Use of toUppercase and toLowercase
-let a = "ghalib";
+// let a = "ghalib";
+// let b = "Ghalib";
+// if (a.toLowerCase() === b.toLowerCase()) {
+//   console.log("Same Value");
+// }
+// else {
+//   console.log('no value');
+// }
+// Uses of trim and toupper & lowercase together
+
+let a = "ghalib ";
 let b = "Ghalib";
-if (a.toLowerCase() === b.toLowerCase()) {
-  console.log("Same Value");
-}
-else {
+if (a.trim().toLowerCase=== b.trim().toLowerCase) {
+  console.log('Same Value');
+} else {
   console.log('no value');
 }
