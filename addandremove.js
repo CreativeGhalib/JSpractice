@@ -444,17 +444,22 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 // console.log(reversedString);
 
 
-// reverse only array te kaj kore ,tai age split kore " " use kore then reverse() and then join(')
-// const sentence = "i am learning webdev";
-// const reversed = sentence.split('').reverse().join("");
-// console.log(reversed);
+// **reverse only array te kaj kore ,tai age split kore  array banano hoi (" ") use kore then reverse() and then join(')
+// **const sentence = "i am learning webdev";
+// **const reversed = sentence.split('').reverse().join("");
+// **console.log(reversed);
 
 
 // ** now i am going to practice object
+// console.log(bottle.isPremium); we can access to object property using dot notation & using third bracket
 
 const bottle = {
   brand: 'apple',
   price: 15,
   isPremium: true
-}
-console.log(bottle.isPremium);
+};
+// const premiumQuality = bottle.isPremium; 
+//  let premiumQuality = bottle.isPremium;
+  const premiumQuality = bottle["isPremium"];
+
+console.log(premiumQuality);
