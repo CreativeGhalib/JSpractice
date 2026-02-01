@@ -452,14 +452,18 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 
 // ** now i am going to practice object
 // console.log(bottle.isPremium); we can access to object property using dot notation & using third bracket
+// * Sometimes w efind keys like  "faull name",in cases like this we wont be able to access to it using dot notation from a object,in cases like this we use
+// {xxxyyyzzz ["faull name"]} to access the key in xxxyyyzzz object
 
 const bottle = {
   brand: 'apple',
   price: 15,
   isPremium: true
 };
-// const premiumQuality = bottle.isPremium; 
+// const premiumQuality = bottle.isPremium;
 //  let premiumQuality = bottle.isPremium;
-  const premiumQuality = bottle["isPremium"];
+const premiumQuality = bottle["isPremium"];
+bottle.price = 20;
+bottle['brand']="Apel Mahamud"
 
-console.log(premiumQuality);
+console.log(bottle);
