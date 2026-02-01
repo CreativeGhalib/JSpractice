@@ -390,7 +390,17 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 
 // Slice,splice & joint
 
+// const fruits = ['mango', 'Banana', 'Apple', 'dfruit', 'mfruit'];
+// const newfruit = fruits.slice(2, 5);
+// // const fruit = fruits.slice(2,5) [2,5 value ektu tricky 2,5 means 2 theke start kore 4 index porjonto rewsult show kom korbe ,always 1 kom hoi last er value theke ]
+// console.log(newfruit,fruits);
+
+// alternative way with different context
 const fruits = ['mango', 'Banana', 'Apple', 'dfruit', 'mfruit'];
 const newfruit = fruits.slice(2, 5);
-// const fruit = fruits.slice(2,5) [2,5 value ektu tricky 2,5 means 2 theke start kore 4 index porjonto rewsult show kom korbe ,always 1 kom hoi last er value theke ]
-console.log(newfruit,fruits);
+
+console.log(newfruit, fruits);
+
+for (let i = 0; i < newfruit.length; i++) {
+  console.log(i, newfruit[i]);
+}
