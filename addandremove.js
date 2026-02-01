@@ -396,11 +396,22 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 // console.log(newfruit,fruits);
 
 // alternative way with different context
-const fruits = ['mango', 'Banana', 'Apple', 'dfruit', 'mfruit'];
-const newfruit = fruits.slice(2, 5);
+// const fruits = ['mango', 'Banana', 'Apple', 'dfruit', 'mfruit'];
+// const newfruit = fruits.slice(2, 5);
 
-console.log(newfruit, fruits);
+// console.log(newfruit);
 
-for (let i = 0; i < newfruit.length; i++) {
-  console.log(i, newfruit[i]);
-}
+// for (let i = 0; i < newfruit.length; i++) {
+//   console.log(i, newfruit[i]);
+// }
+
+
+// Now i will practice split method,
+const sentence = "My name is Ghalib";
+let newSentence = sentence.split(' ');;
+console.log(newSentence);
+
+// Now i will use join
+const xyz = ['My', 'name', 'is', 'Ghalib'];
+console.log(xyz.join(" "));
+// Ps: join & split boths working nature is  vice versa
