@@ -363,7 +363,16 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 
 // For of loop task
 
-const fruits = ['mango', 'Banana', 'Apple'];
-for (const fruit of fruits) {
-  console.log(fruit);
+// const fruits = ['mango', 'Banana', 'Apple'];
+// for (const fruit of fruits) {
+//   console.log(fruit);
+// }
+// Use of toUppercase and toLowercase
+let a = "ghalib";
+let b = "Ghalib";
+if (a.toLowerCase() === b.toLowerCase()) {
+  console.log("Same Value");
+}
+else {
+  console.log('no value');
 }
