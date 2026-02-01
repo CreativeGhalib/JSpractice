@@ -407,20 +407,36 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 
 
 // Now i will practice split method,
-const sentence = "My name is Ghalib";
-let newSentence = sentence.split(' ');;
-console.log(newSentence);
+// const sentence = "My name is Ghalib";
+// let newSentence = sentence.split(' ');;
+// console.log(newSentence);
 
-// Now i will use join
-const xyz = ['My', 'name', 'is', 'Ghalib'];
-console.log(xyz.join(" "));
+// // Now i will use join
+// const xyz = ['My', 'name', 'is', 'Ghalib'];
+// console.log(xyz.join(" "));
 // Ps: join & split boths working nature is  vice versa
 
 
 
 // concatination    ...newSentence.what is concat?
-let firdstName = "Mesbah ";
-let lastName = "Ghalib";
+// let firdstName = "Mesbah ";
+// let lastName = "Ghalib";
 
-let myFullname = firdstName.concat(lastName);
-console.log(myFullname);
+// let myFullname = firdstName.concat(lastName);
+// console.log(myFullname);
+
+
+// write now we will learn about include method which will help use to know a specific item do exist in array or string  or not.
+//
+// const fruits = ['mango', 'Banana', 'Apple', 'dfruit', 'mfruit'];
+// let isExist = fruits.includes('Banana')
+// console.log(isExist);
+
+// How can we reverse a string ....we will use for of loop,we can regverse anything using for loop and while loop as well.
+
+const sentence = "i am learning webdev";
+let reversedString = '';
+for (const letter of sentence) {
+  reversedString = letter + reversedString;
+}
+console.log(reversedString);
