@@ -432,11 +432,19 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 // let isExist = fruits.includes('Banana')
 // console.log(isExist);
 
-// How can we reverse a string ....we will use for of loop,we can regverse anything using for loop and while loop as well.
+// How can we reverse a string ....we will use for of loop,we can regverse anything using for loop and while loop as well.(let i = 0; i < newfruit.length; i++) and (const letter of sentence) {
+//   reversedString = letter + reversedString;
+// } ,prothomtai koshto beshi ,porer way te korle koshto kom
 
+// const sentence = "i am learning webdev";
+// let reversedString = '';
+// for (const letter of sentence) {
+//   reversedString = letter + reversedString;
+// }
+// console.log(reversedString);
+
+
+// reverse only array te kaj kore ,tai age split kore " " use kore then reverse() and then join(')
 const sentence = "i am learning webdev";
-let reversedString = '';
-for (const letter of sentence) {
-  reversedString = letter + reversedString;
-}
-console.log(reversedString);
+const reversed = sentence.split('').reverse().join("");
+console.log(reversed);
