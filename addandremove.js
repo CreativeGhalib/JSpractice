@@ -378,10 +378,19 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 // }
 // Uses of trim and toupper & lowercase together
 
-let a = "ghalib ";
-let b = "Ghalib";
-if (a.trim().toLowerCase=== b.trim().toLowerCase) {
-  console.log('Same Value');
-} else {
-  console.log('no value');
-}
+// let a = "ghalib ";
+// let b = "Ghalib";
+// if (a.trim().toLowerCase=== b.trim().toLowerCase) {
+//   console.log('Same Value');
+// } else {
+//   console.log('no value');
+// }
+
+
+
+// Slice,splice & joint
+
+const fruits = ['mango', 'Banana', 'Apple', 'dfruit', 'mfruit'];
+const newfruit = fruits.slice(2, 5);
+// const fruit = fruits.slice(2,5) [2,5 value ektu tricky 2,5 means 2 theke start kore 4 index porjonto rewsult show kom korbe ,always 1 kom hoi last er value theke ]
+console.log(newfruit,fruits);
