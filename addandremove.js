@@ -352,10 +352,18 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 
 
 
-// Do while loop task
-let i = 0;
-do {
-  console.log(i);
-  i++
+// Do while loop task[atleast it print once the initial vale if the condition dont match !! ]
+// let i = 0;
+// do {
+//   console.log(i);
+//   i++
+// }
+// while(i<10)
+
+
+// For of loop task
+
+const fruits = ['mango', 'Banana', 'Apple'];
+for (const fruit of fruits) {
+  console.log(fruit);
 }
-while(i<10)
