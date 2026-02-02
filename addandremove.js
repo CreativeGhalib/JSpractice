@@ -455,6 +455,9 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 // * Sometimes w efind keys like  "faull name",in cases like this we wont be able to access to it using dot notation from a object,in cases like this we use
 // {xxxyyyzzz ["faull name"]} to access the key in xxxyyyzzz object
 
+
+// *I explained how to access and set CSSFontFeatureValuesRule, including an example with a weird key that needs to be handled in a specific way.
+
 const bottle = {
   brand: 'apple',
   price: 15,
