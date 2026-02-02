@@ -458,15 +458,32 @@ Implement a countdown timer that counts down from 21 to 15. using for loop
 
 // *I explained how to access and set CSSFontFeatureValuesRule, including an example with a weird key that needs to be handled in a specific way.
 
-const bottle = {
-  brand: 'apple',
-  price: 15,
-  isPremium: true
-};
-// const premiumQuality = bottle.isPremium;
-//  let premiumQuality = bottle.isPremium;
-const premiumQuality = bottle["isPremium"];
-bottle.price = 20;
-bottle['brand']="Apel Mahamud"
+// const bottle = {
+//   brand: 'apple',
+//   price: 15,
+//   isPremium: true
+// };
+// // const premiumQuality = bottle.isPremium;
+// //  let premiumQuality = bottle.isPremium;
+// // const premiumQuality = bottle["isPremium"];
+// bottle.price = 20;
+// bottle['brand']="Apel Mahamud"
 
-console.log(bottle);
+// console.log(bottle);
+
+
+// // *Task-1:
+// // *Count how many times a string has the letter a;
+// let string = "i am learning web development from programming-hero";
+// let count = 0;
+// for (const letter of string) {
+//   if (letter === 'a') {
+//     count++;
+//   }
+// }
+// console.log(`A has  appeared ${count} times `);
+
+// Task-2:
+// Count how many times a string has the letter a or A
+
+

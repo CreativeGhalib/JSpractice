@@ -1,0 +1,6 @@
+﻿# ESLint config (do not commit)
+eslint.config.js
+# Do not commit npm config/lock files
+package.json
+package-lock.json
+node_modules/
