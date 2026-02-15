@@ -29,6 +29,12 @@
 
 // Problem 1: Find the sum of all numbers in an array
 // Solution: Use reduce to sum all array elements
-const numbers = [10, 20, 30, 40, 50];
-const sum = numbers.reduce((acc, curr) => acc + curr, 0);
-console.log('Sum:', sum); // 150
+// const numbers = [10, 20, 30, 40, 50];
+// const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+// console.log('Sum:', sum);
+
+// Problem 2: Find the largest number in an array
+// Solution: Use Math.max with spread operator to find maximum value
+const scores = [85, 92, 78, 96, 88];
+const maxScore = Math.max(...scores);
+console.log('Max Score:', maxScore);
