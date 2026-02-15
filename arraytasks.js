@@ -11,17 +11,24 @@
 // fruits[2] = 'jambura';
 // console.log(fruits);
 
-
 // const number = 7;
 // if (number < 1) {
 //   console.log("Numberchoto ekta number paise");
 // }
 // console.log("something else is cooking");
 
-
-
 // while loop
-const number = 0;
-while(number < 5) {
-    console.log(" number is less than 5");
-}
+// const number = 0;
+// while (number < 5) {
+//   console.log(' number is less than 5');
+// }
+
+// ============================================
+// 10 ARRAY AND OBJECT PROBLEMS WITH SOLUTIONS
+// ============================================
+
+// Problem 1: Find the sum of all numbers in an array
+// Solution: Use reduce to sum all array elements
+const numbers = [10, 20, 30, 40, 50];
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log('Sum:', sum); // 150
