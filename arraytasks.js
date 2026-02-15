@@ -40,7 +40,19 @@
 // console.log('Max Score:', maxScore);
 // Problem 3: Filter out even numbers from an array
 // Solution: Use filter to get only odd numbers from array
-const mixedNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const oddNumbers = mixedNumbers.filter((num) => num % 2 !== 0);
-console.log('Odd Numbers:', oddNumbers);
+// const mixedNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const oddNumbers = mixedNumbers.filter((num) => num % 2 !== 0);
+// console.log('Odd Numbers:', oddNumbers);
 
+// Problem 4: Reverse an array without using reverse method
+// Solution: Use spread and reverse to create reversed array copy
+const originalArray = ['a', 'b', 'c', 'd', 'e'];
+const reversedArray = [...originalArray].reverse();
+console.log('Reversed:', reversedArray);
+
+// Problem 5: Remove duplicates from an array
+// Solution: Use Set to remove duplicate values from array
+const duplicateArray = [1, 2, 2, 3, 4, 4, 5, 5, 5];
+const uniqueArray = [...new Set(duplicateArray)];
+console.log('Unique:', uniqueArray); //
+ 
