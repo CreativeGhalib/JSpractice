@@ -35,6 +35,12 @@
 
 // Problem 2: Find the largest number in an array
 // Solution: Use Math.max with spread operator to find maximum value
-const scores = [85, 92, 78, 96, 88];
-const maxScore = Math.max(...scores);
-console.log('Max Score:', maxScore);
+// const scores = [85, 92, 78, 96, 88];
+// const maxScore = Math.max(...scores);
+// console.log('Max Score:', maxScore);
+// Problem 3: Filter out even numbers from an array
+// Solution: Use filter to get only odd numbers from array
+const mixedNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const oddNumbers = mixedNumbers.filter((num) => num % 2 !== 0);
+console.log('Odd Numbers:', oddNumbers);
+
