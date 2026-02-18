@@ -55,3 +55,10 @@ function findHighestSubject(student) {
   return { subject: highestSubject, score: highestScore };
 }
 
+// Step 4: Function to check if student passed
+function hasPassed(student) {
+  const average = calculateAverage(student);
+  return average >= 50;
+}
+
+// 
