@@ -61,4 +61,19 @@ function hasPassed(student) {
   return average >= 50;
 }
 
-// 
+// TESTING THE SOLUTION
+// =============================================
+
+console.log('Student Name:', student.name);
+console.log('Student Age:', student.age);
+console.log('Subjects:', student.subjects);
+console.log('----------------------------');
+
+const average = calculateAverage(student);
+console.log('Average Score:', average.toFixed(2));
+
+const highest = findHighestSubject(student);
+console.log('Highest Subject:', highest.subject, 'with score', highest.score);
+
+const passed = hasPassed(student);
+console.log('Passed:', passed ? 'Yes! ✓' : 'No ✗');
