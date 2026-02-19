@@ -194,4 +194,14 @@ byQuery.forEach(function (el) {    // NodeList has forEach
 });
 
 
+// 14. আমি জানি কীভাবে relative এবং absolute position দিয়ে বিভিন্ন সেকশন বা এলিমেন্ট সাজাতে হয়
+const wrapper = document.getElementById("wrapper");
+wrapper.style.position = "relative";
+
+const badge = document.getElementById("badge");
+badge.style.position = "absolute";
+badge.style.top = "10px";
+badge.style.right = "10px";
+
+
 
