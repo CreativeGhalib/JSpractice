@@ -203,5 +203,36 @@ badge.style.position = "absolute";
 badge.style.top = "10px";
 badge.style.right = "10px";
 
+/ 15. আমি Tailwind CSS ব্যবহার করে একটি Tea House ওয়েবসাইট ডিজাইন করতে পারি (Banner, Feature, Team, Footer)
+// Tailwind CSS is applied in HTML using utility classes — no JS needed.
+// Example: <section class="bg-green-100 py-16 text-center text-2xl font-bold">Welcome to Tea House</section>
+
+
+// 16. আমি JavaScript দিয়ে confirmation button তৈরি করতে পারি — GitHub-এর মতো ডিলিট নিশ্চিতকরণ
+const deleteBtn = document.getElementById("delete-btn");
+deleteBtn.addEventListener("click", function () {
+  const confirmed = confirm("Are you sure you want to delete this?");
+  if (confirmed) {
+    document.getElementById("delete-target").remove();
+    console.log("Item deleted.");
+  }
+});
+
+
+// 17. আমি জানি মাল্টিপল ইভেন্ট হ্যান্ডলার যোগ করার কৌশল — একটি বাটনে একাধিক কাজ করানো যায়
+const multiBtn = document.getElementById("multi-btn");
+
+multiBtn.addEventListener("click", function () {
+  console.log("Handler 1: log clicked");
+});
+
+multiBtn.addEventListener("click", function () {
+  multiBtn.style.backgroundColor = "coral";
+});
+
+multiBtn.addEventListener("click", function () {
+  alert("Handler 3: alert fired");
+});
+
 
 
