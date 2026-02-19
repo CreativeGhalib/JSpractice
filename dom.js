@@ -234,5 +234,31 @@ multiBtn.addEventListener("click", function () {
   alert("Handler 3: alert fired");
 });
 
+// 18. আমি JavaScript দিয়ে UI এর অংশ হাইড/শো (toggle) করতে পারি
+const toggleBtn = document.getElementById("toggle-btn");
+const panel = document.getElementById("panel");
 
+toggleBtn.addEventListener("click", function () {
+  if (panel.style.display === "none") {
+    panel.style.display = "block";
+  } else {
+    panel.style.display = "none";
+  }
+});
+
+
+// 19. আমি জানি dynamic error message বা success message দেখাতে — UX ভালো করার জন্য
+function showMessage(type, text) {
+  const msg = document.getElementById("message-box");
+  msg.innerText = text;
+  msg.style.display = "block";
+  msg.style.color = type === "error" ? "red" : "green";
+
+  setTimeout(function () {
+    msg.style.display = "none";
+  }, 3000);
+}
+
+showMessage("success", "Done! Your action was successful.");
+showMessage("error", "Something went wrong. Please try again.");
 
