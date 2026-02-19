@@ -169,4 +169,29 @@ form.addEventListener("submit", function (event) {
 });
 
 
+// 12. আমি নিজে ডাইনামিক ব্যালেন্স হিসাব করতে পারি — ইউজারের অ্যাকশন অনুযায়ী (Add Money বা Cash Out)
+let currentBalance = 5000;
+
+function updateBalance(action, amount) {
+  if (action === "add") {
+    currentBalance += amount;
+  } else if (action === "cashout") {
+    currentBalance -= amount;
+  }
+  document.getElementById("balance-display").innerText = "BDT " + currentBalance;
+}
+
+
+// 13. আমি বুঝি HTMLCollection ও NodeList এর মধ্যে পার্থক্য এবং কোনটি কখন ব্যবহার করব
+const byClass = document.getElementsByClassName("item"); // HTMLCollection — live
+const byQuery = document.querySelectorAll(".item");       // NodeList — static
+
+console.log(byClass instanceof HTMLCollection);
+console.log(byQuery instanceof NodeList);
+
+byQuery.forEach(function (el) {    // NodeList has forEach
+  console.log(el.innerText);
+});
+
+
 
