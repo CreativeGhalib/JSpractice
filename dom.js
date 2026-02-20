@@ -10,7 +10,6 @@
 //   console.log(el.innerText);
 // });
 
-
 // // 2. আমি JavaScript দিয়ে HTML elements তৈরি করতে পারি এবং appendChild() বা remove() দিয়ে DOM-এ যোগ/মুছে ফেলতে পারি
 // const newParagraph = document.createElement("p");
 // newParagraph.innerText = "This paragraph was added by JavaScript.";
@@ -18,7 +17,6 @@
 
 // const oldItem = document.querySelector(".item");
 // oldItem.remove();
-
 
 // // 3. আমি DOM থেকে innerText, innerHTML, getAttribute, setAttribute ব্যবহার করে কনটেন্ট ও স্টাইল নিয়ন্ত্রণ করতে পারি
 // const link = document.querySelector("a");
@@ -30,14 +28,12 @@
 // info.innerText = "Updated with innerText";
 // info.innerHTML = "<strong>Updated with innerHTML</strong>";
 
-
 // // 4. আমি বুঝি CSS ক্লাস JavaScript দিয়ে অ্যাড বা রিমুভ করার কৌশল এবং কীভাবে ডাইনামিক স্টাইল প্রয়োগ করা যায়
 // const card = document.querySelector(".card");
 // card.classList.add("active");
 // card.classList.remove("hidden");
 // card.classList.toggle("highlight");
 // card.style.fontSize = "18px";
-
 
 // // 5. আমি JS ইভেন্ট বুঝি এবং ব্যবহার করতে পারি — onclick, addEventListener, Event Object
 // const btn = document.getElementById("my-btn");
@@ -54,7 +50,6 @@
 // document.addEventListener("keydown", function (event) {
 //   console.log("Key pressed:", event.key);
 // });
-
 
 // // 6. আমি ইভেন্ট বাবলিং এবং Event Delegation বুঝি এবং stopPropagation দিয়ে Propagation থামাতে পারি
 // const list = document.getElementById("my-list");
@@ -75,7 +70,6 @@
 //   console.log("Child clicked — bubble stopped");
 // });
 
-
 // // 7. আমি একটি কমেন্ট বক্স তৈরি করতে পারি যেখানে ইউজার কমেন্ট দিয়ে তা রিয়েল টাইমে DOM-এ দেখতে পাবে
 // const commentForm = document.getElementById("comment-form");
 // const commentInput = document.getElementById("comment-input");
@@ -91,7 +85,6 @@
 //   commentList.appendChild(li);
 //   commentInput.value = "";
 // });
-
 
 // // 8. আমি জানি কিভাবে Payooo মোবাইল ব্যাংক প্রজেক্ট তৈরি করতে হয় — balance যুক্ত/বিয়োগ এবং পিন ভেরিফিকেশন
 // let balance = 1000;
@@ -126,7 +119,6 @@
 //   document.getElementById("balance-display").innerText = "Balance: " + balance;
 // });
 
-
 // // 9. আমি JavaScript ফাংশন দিয়ে কোড রিইউজ করতে পারি — ইনপুট ফিল্ড থেকে ভ্যালু আনার জন্য ফাংশন ব্যবহার
 // function getInputValue(id) {
 //   return document.getElementById(id).value.trim();
@@ -135,7 +127,6 @@
 // const username = getInputValue("username");
 // const email = getInputValue("email");
 // console.log(username, email);
-
 
 // // 10. আমি Transaction data handle, validation, এবং UI তে Show করতে পারি সব JavaScript ও DOM দিয়ে
 // const transactions = [];
@@ -159,7 +150,6 @@
 //   });
 // }
 
-
 // // 11. আমি জানি কীভাবে ফর্ম সাবমিশন রোধ (preventDefault) করে JavaScript দিয়ে ইউজার ইনপুট হ্যান্ডেল করতে হয়
 // const form = document.getElementById("my-form");
 // form.addEventListener("submit", function (event) {
@@ -167,7 +157,6 @@
 //   const value = document.getElementById("name-input").value;
 //   console.log("Submitted name:", value);
 // });
-
 
 // // 12. আমি নিজে ডাইনামিক ব্যালেন্স হিসাব করতে পারি — ইউজারের অ্যাকশন অনুযায়ী (Add Money বা Cash Out)
 // let currentBalance = 5000;
@@ -181,7 +170,6 @@
 //   document.getElementById("balance-display").innerText = "BDT " + currentBalance;
 // }
 
-
 // // 13. আমি বুঝি HTMLCollection ও NodeList এর মধ্যে পার্থক্য এবং কোনটি কখন ব্যবহার করব
 // const byClass = document.getElementsByClassName("item"); // HTMLCollection — live
 // const byQuery = document.querySelectorAll(".item");       // NodeList — static
@@ -192,7 +180,6 @@
 // byQuery.forEach(function (el) {    // NodeList has forEach
 //   console.log(el.innerText);
 // });
-
 
 // // 14. আমি জানি কীভাবে relative এবং absolute position দিয়ে বিভিন্ন সেকশন বা এলিমেন্ট সাজাতে হয়
 // const wrapper = document.getElementById("wrapper");
@@ -207,7 +194,6 @@
 // // Tailwind CSS is applied in HTML using utility classes — no JS needed.
 // // Example: <section class="bg-green-100 py-16 text-center text-2xl font-bold">Welcome to Tea House</section>
 
-
 // // 16. আমি JavaScript দিয়ে confirmation button তৈরি করতে পারি — GitHub-এর মতো ডিলিট নিশ্চিতকরণ
 // const deleteBtn = document.getElementById("delete-btn");
 // deleteBtn.addEventListener("click", function () {
@@ -217,7 +203,6 @@
 //     console.log("Item deleted.");
 //   }
 // });
-
 
 // // 17. আমি জানি মাল্টিপল ইভেন্ট হ্যান্ডলার যোগ করার কৌশল — একটি বাটনে একাধিক কাজ করানো যায়
 // const multiBtn = document.getElementById("multi-btn");
@@ -246,7 +231,6 @@
 //   }
 // });
 
-
 // // 19. আমি জানি dynamic error message বা success message দেখাতে — UX ভালো করার জন্য
 // function showMessage(type, text) {
 //   const msg = document.getElementById("message-box");
@@ -265,32 +249,37 @@ const liCollection = document.getElementsByTagName('li');
 console.log(liCollection);
 for (const li of liCollection) {
   console.log(li.innerText);
-};
+}
 const allHeadings = document.getElementsByTagName('h2');
 console.log(allHeadings);
-for(const h2 of allHeadings) {
+for (const h2 of allHeadings) {
   console.log(h2.innerText);
-};
+}
 const myName = document.getElementById('mesh');
 console.log(myName.innerText);
 myName.innerText = 'sharmin bashar';
-console.log(myName.innerText)
+console.log(myName.innerText);
 
-
-const allList=document.getElementsByClassName("lis-t")
+const allList = document.getElementsByClassName('lis-t');
 console.log(allList);
-for(const li of allList) {
+for (const li of allList) {
   console.log(li.innerText);
   li.style.color = 'blue';
   li.style.fontSize = '20px';
 }
 
-
 // using css selector we can always use querySelector and querySelectorAll to select elements. querySelector will return the first matching element, while querySelectorAll will return a NodeList of all matching elements.
-const itemLst=document.querySelectorAll("#item-list  span");
+const itemLst = document.querySelectorAll('#item-list  span');
 console.log(itemLst);
-for(const item of itemLst) {
+for (const item of itemLst) {
   console.log(item.innerText);
   item.style.color = 'red';
   item.style.fontSize = '18px';
+  item.style.backgroundColor = 'yellow';
+}
+
+// Change background color of all demo-box sections
+const demoBoxes = document.querySelectorAll('section.demo-box');
+for (const section of demoBoxes) {
+  section.style.backgroundColor = 'lightblue';
 }
