@@ -284,3 +284,13 @@ for(const li of allList) {
   li.style.color = 'blue';
   li.style.fontSize = '20px';
 }
+
+
+// using css selector we can always use querySelector and querySelectorAll to select elements. querySelector will return the first matching element, while querySelectorAll will return a NodeList of all matching elements.
+const itemLst=document.querySelectorAll("#item-list  span");
+console.log(itemLst);
+for(const item of itemLst) {
+  console.log(item.innerText);
+  item.style.color = 'red';
+  item.style.fontSize = '18px';
+}
