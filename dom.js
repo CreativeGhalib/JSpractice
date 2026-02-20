@@ -275,3 +275,12 @@ const myName = document.getElementById('mesh');
 console.log(myName.innerText);
 myName.innerText = 'sharmin bashar';
 console.log(myName.innerText)
+
+
+const allList=document.getElementsByClassName("lis-t")
+console.log(allList);
+for(const li of allList) {
+  console.log(li.innerText);
+  li.style.color = 'blue';
+  li.style.fontSize = '20px';
+}
