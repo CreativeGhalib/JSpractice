@@ -281,5 +281,14 @@ for (const item of itemLst) {
 // Change background color of all demo-box sections
 const demoBoxes = document.querySelectorAll('section.demo-box');
 for (const section of demoBoxes) {
-  section.style.backgroundColor = 'lightblue';
+  section.classList.add('section-card');
+}
+const allh1 = document.querySelectorAll('h1');
+for (const h1 of allh1) {
+  h1.style.color = 'green';
+  h1.style.fontSize = '40px';
+}
+const bg = document.getElementsByTagName('section');
+for (const section of bg) {
+  section.classList.add('section-card');
 }
