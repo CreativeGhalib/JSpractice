@@ -36,3 +36,10 @@ document.getElementById('clear-btn').addEventListener('click', function () {
   const nameContainer = document.getElementById('name-container');
   nameContainer.innerHTML = '';
 });
+
+// event bubble order
+// grand CAPTURE
+// → parent CAPTURE
+// → BUTTON (TARGET)
+// → parent BUBBLE
+// → grand BUBBLE
