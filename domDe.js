@@ -31,3 +31,8 @@ document.getElementById('remove-btn').addEventListener('click', function () {
   nameContainer.removeChild(last);
 });
 
+// Example 3: clear all names using dom
+document.getElementById('clear-btn').addEventListener('click', function () {
+  const nameContainer = document.getElementById('name-container');
+  nameContainer.innerHTML = '';
+});
