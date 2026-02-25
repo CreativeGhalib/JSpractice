@@ -43,3 +43,8 @@ document.getElementById('clear-btn').addEventListener('click', function () {
 // → BUTTON (TARGET)
 // → parent BUBBLE
 // → grand BUBBLE
+// things i should remember
+
+// Event Capture = বাইরে → ভিতরে
+// Event Target = যেটায় ক্লিক
+// Event Bubble = ভিতরে → বাইরে
