@@ -17,6 +17,17 @@ document.getElementById('addname-btn')
     const newP = document.createElement('p');
     newP.innerText = newName;
     nameContainer.appendChild(newP);
-    nameInput.value=''
+    nameInput.value=
 
 })
+
+
+
+// Example 2: remove last added name
+document.getElementById('remove-btn').addEventListener('click', function () {
+  const nameContainer = document.getElementById('name-container');
+  const last = nameContainer.lastElementChild;
+  if (!last) return;
+  nameContainer.removeChild(last);
+});
+
