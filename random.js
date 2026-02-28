@@ -16,9 +16,19 @@
 // }
 // const result = sum(params);
 // console.log(result)
-let price = 0;
-if (!price) {
-  console.log('price is truthy');
-} else {
-  console.log('price is falsy');
+// let price = 0;
+// if (!price) {
+//   console.log('price is truthy');
+// } else {
+//   console.log('price is falsy');
+// }
+
+// closure task
+function createUser() {
+  let password = "12345"
+  return function checkPassword(input) {
+    return input === password;
+  }
 }
+const login = createUser();
+console.log(login("12345"));
