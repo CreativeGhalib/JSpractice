@@ -6,7 +6,19 @@
 // add(10);
 // add(10, 20);
 
-const numbers = [12, 11, 2, 3, 4, 15];
-const maxNum = Math.max(...numbers);
-console.log(...numbers)
- 
+// const numbers = [12, 11, 2, 3, 4, 15];
+// const maxNum = Math.max(...numbers);
+// console.log(...numbers)
+
+// const params = [11, 12, 13];
+// function sum(x, y, z) {
+//   return x + y + z;
+// }
+// const result = sum(params);
+// console.log(result)
+let price = 0;
+if (!price) {
+  console.log('price is truthy');
+} else {
+  console.log('price is falsy');
+}
