@@ -15,6 +15,27 @@
 
 // we can do the same thing using a single line code
 
-const numbers = [1, 2, 3, 4, 5];
-const doubled = numbers.map(num => num * 2);
-console.log(doubled)
+// const numbers = [1, 2, 3, 4, 5];
+// const doubled = numbers.map(num => num * 2);
+// const squared = numbers.map(num => num * num);
+// console.log(doubled)
+// console.log(squared)
+// const friends = ['ghalib', "kheya", "rushda"];
+// const firsLetters = friends.map(friend => friend[0]);
+// console.log(firsLetters)
+const products = [
+  { name: "computer", price: 101 },
+  { name: "laptop", price: 102 },
+  { name: "tablet", price: 103 },
+];
+const prices = products.map(product => product.price);
+const names = products.map(product => product.name.toUpperCase());
+console.log(prices)
+console.log(names)
+
+
+// similar way we can use foreach
+let sum = 0;
+[5, 10, 15].forEach(n =>
+sum=sum+ n);
+console.log(sum);
