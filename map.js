@@ -41,11 +41,21 @@
 // console.log(sum);
 
 
-// USE OF MAP
-const nums = [10, 20, 30];
+// // USE OF MAP
+// const nums = [10, 20, 30];
 
-const result = nums.map((value, index) => {
-  return index + ":" + value;
-});
+// const result = nums.map((value, index) => {
+//   return index + ":" + value;
+// });
 
-console.log(result);
+// console.log(result);
+// use of filter find and reduce
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const evenNumbers = numbers.filter(num => num % 2 === 0);
+const friends = ["ghalib", "kheya", "rakhi", "rushda"];
+const sixdgtNames = friends.filter(friend => friend.length > 5);
+const friends = ["ghalib", "kheya", "rakhi", "rushda"];
+
+const rNames = friends.filter(friend => friend.startsWith("r"));
+console.log(rNames); 
+console.log(sixdgtNames)
