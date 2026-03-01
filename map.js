@@ -23,19 +23,29 @@
 // const friends = ['ghalib', "kheya", "rushda"];
 // const firsLetters = friends.map(friend => friend[0]);
 // console.log(firsLetters)
-const products = [
-  { name: "computer", price: 101 },
-  { name: "laptop", price: 102 },
-  { name: "tablet", price: 103 },
-];
-const prices = products.map(product => product.price);
-const names = products.map(product => product.name.toUpperCase());
-console.log(prices)
-console.log(names)
+// const products = [
+//   { name: "computer", price: 101 },
+//   { name: "laptop", price: 102 },
+//   { name: "tablet", price: 103 },
+// ];
+// const prices = products.map(product => product.price);
+// const names = products.map(product => product.name.toUpperCase());
+// console.log(prices)
+// console.log(names)
 
 
 // similar way we can use foreach
-let sum = 0;
-[5, 10, 15].forEach(n =>
-sum=sum+ n);
-console.log(sum);
+// let sum = 0;
+// [5, 10, 15].forEach(n =>
+// sum=sum+ n);
+// console.log(sum);
+
+
+// USE OF MAP
+const nums = [10, 20, 30];
+
+const result = nums.map((value, index) => {
+  return index + ":" + value;
+});
+
+console.log(result);
