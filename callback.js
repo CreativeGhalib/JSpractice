@@ -24,8 +24,9 @@
 // addiTion(12, 12);
 
 function add(num1, num2) {
-  console.log("arguments:", arguments);
-  const args = [...arguments];
-  console.log(args)
+  console.log('arguments:', arguments);
+  const args = [...arguments]; //(we use spread operator to connvert arguments/object like array to array )
+
+  console.log(args);
 }
 add(12, 14,11,9)
