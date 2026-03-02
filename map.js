@@ -76,4 +76,10 @@ console.log(prices)
 // JSON.stringify example object to JSON string
 const user = { name: "Ghalib", age: 22 };
 const jsonText = JSON.stringify(user);
-console.log(jsonText); 
+console.log(jsonText);
+
+
+// JSON.parse example JSON string to object
+const jsonText = '{"name":"Ghalib","age":22}';
+const user = JSON.parse(jsonText);
+console.log(user);
