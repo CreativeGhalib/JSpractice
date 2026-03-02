@@ -52,10 +52,15 @@
 // use of filter find and reduce
 // const numbers = [1, 2, 3, 4, 5, 6];
 // const evenNumbers = numbers.filter(num => num % 2 === 0);
-const friends = ["ghalib", "kheya", "rakhi", "rushda"];
-const sixdgtNames = friends.filter(friend => friend.length > 5);
-const friends = ["ghalib", "kheya", "rakhi", "rushda"];
+// const friends = ["ghalib", "kheya", "rakhi", "rushda"];
+// const sixdgtNames = friends.filter(friend => friend.length > 5);
+// const friends = ["ghalib", "kheya", "rakhi", "rushda"];
 
-const rNames = friends.filter(friend => friend.startsWith("r"));
-console.log(rNames); 
-console.log(sixdgtNames)
+// const rNames = friends.filter(friend => friend.startsWith("r"));
+// console.log(rNames);
+// console.log(sixdgtNames)
+
+const nums = [1, 2, 3, 4, 5];
+const doubledIt = (num) => num * 2;
+const doubled = nums.map(doubledIt);
+console.log(doubled)
