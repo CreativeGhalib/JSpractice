@@ -24,11 +24,26 @@
 // }
 
 // closure task
-function createUser() {
-  let password = "12345"
-  return function checkPassword(input) {
-    return input === password;
-  }
+// function createUser() {
+//   let password = "12345"
+//   return function checkPassword(input) {
+//     return input === password;
+//   }
+// }
+// const login = createUser();
+// console.log(login("12345"));
+
+// more about clouser
+
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    return count;
+  };
 }
-const login = createUser();
-console.log(login("12345"));
+
+const inc = outer();
+inc(); // 1
+inc(); // 2
+
