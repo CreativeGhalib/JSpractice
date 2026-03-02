@@ -55,6 +55,18 @@ const loadData = () => {
     .then(response => response.json())
     .then(json => console.log(json));
 };
-const p = document.getElementById("exper");
-const obj = { name: "Ghalib", age: 22 };
-p.textContent = JSON.stringify(obj, null, 2);
+const loadPost = () => {
+  const url = 'https://jsonplaceholder.typicode.com/posts';
+  fetch(url)
+    .then(res => res.json())
+    .then(jdata => displayPost(jdata));
+};
+
+const displayPost = (posts) => {
+  posts.forEach(post => {
+    console.log(post);
+  });
+}
+// const p = document.getElementById("exper");
+// const obj = { name: "Ghalib", age: 22 };
+// p.textContent = JSON.stringify(obj, null, 2);
