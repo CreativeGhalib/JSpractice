@@ -43,7 +43,8 @@ function outer() {
   };
 }
 
-const inc = outer();
+const inc = outer();//inc is a function at the end
+console.dir(inc);
 inc(); // 1
+console.dir(inc);
 inc(); // 2
-
