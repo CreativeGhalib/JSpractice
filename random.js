@@ -35,16 +35,26 @@
 
 // more about clouser
 
-function outer() {
-  let count = 0;
-  return function inner() {
-    count++;
-    return count;
-  };
-}
+// function outer() {
+//   let count = 0;
+//   return function inner() {
+//     count++;
+//     return count;
+//   };
+// }
 
-const inc = outer();//inc is a function at the end
-console.dir(inc);
-inc(); // 1
-console.dir(inc);
-inc(); // 2
+// const inc = outer();//inc is a function at the end
+// console.dir(inc);
+// inc(); // 1
+// console.dir(inc);
+// inc(); // 2
+
+
+const loadData = () => {
+  fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => console.log(json));
+};
+const p = document.getElementById("exper");
+const obj = { name: "Ghalib", age: 22 };
+p.textContent = JSON.stringify(obj, null, 2);

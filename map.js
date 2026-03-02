@@ -65,21 +65,25 @@
 // const doubled = nums.map(doubledIt);
 // console.log(doubled)
 
-const product = [
-  { name: 'laptop', price: 4500 },
-  { name: 'mobile', price: 500 },
-  { name: 'tab', price: 400 }
-];
-const prices = product.map(pod => pod.price);
-console.log(prices)
+// const product = [
+//   { name: 'laptop', price: 4500 },
+//   { name: 'mobile', price: 500 },
+//   { name: 'tab', price: 400 }
+// ];
+// const prices = product.map(pod => pod.price);
+// console.log(prices)
 
-// JSON.stringify example object to JSON string
-const user = { name: "Ghalib", age: 22 };
-const jsonText = JSON.stringify(user);
-console.log(jsonText);
+// // JSON.stringify example object to JSON string
+// const user = { name: "Ghalib", age: 22 };
+// const jsonText = JSON.stringify(user);
+// console.log(jsonText);
 
 
-// JSON.parse example JSON string to object
-const jsonText = '{"name":"Ghalib","age":22}';
-const user = JSON.parse(jsonText);
-console.log(user);
+// // JSON.parse example JSON string to object
+// const jsonText = '{"name":"Ghalib","age":22}';
+// const user = JSON.parse(jsonText);
+// console.log(user);
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json));
