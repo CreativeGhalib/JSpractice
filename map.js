@@ -60,7 +60,20 @@
 // console.log(rNames);
 // console.log(sixdgtNames)
 
-const nums = [1, 2, 3, 4, 5];
-const doubledIt = (num) => num * 2;
-const doubled = nums.map(doubledIt);
-console.log(doubled)
+// const nums = [1, 2, 3, 4, 5];
+// const doubledIt = (num) => num * 2;
+// const doubled = nums.map(doubledIt);
+// console.log(doubled)
+
+const product = [
+  { name: 'laptop', price: 4500 },
+  { name: 'mobile', price: 500 },
+  { name: 'tab', price: 400 }
+];
+const prices = product.map(pod => pod.price);
+console.log(prices)
+
+// JSON.stringify example object to JSON string
+const user = { name: "Ghalib", age: 22 };
+const jsonText = JSON.stringify(user);
+console.log(jsonText); 
