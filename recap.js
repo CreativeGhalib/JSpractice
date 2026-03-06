@@ -32,3 +32,13 @@ async function loadIssues() {
 }
 
 loadIssues();
+// how to use object entries
+
+Object.entries()
+Object.entries(user).forEach(([key, value]) => {
+  console.log(key, value);
+});
+// for...in (object loop  way)
+for (const key in user) {
+  console.log(key, user[key]);
+}
