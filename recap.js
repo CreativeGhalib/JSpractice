@@ -69,3 +69,9 @@ document.getElementById('box').addEventListener('mouseleave', function() {
     console.log('Mouse left the box');
 });
 
+
+// Example 5: Keyboard Event (keypress)
+document.getElementById('input').addEventListener('keypress', function(event) {
+    console.log('Key pressed: ' + event.key);
+});
+
