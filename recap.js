@@ -55,3 +55,9 @@ document.getElementById('btn2').addEventListener('dblclick', function() {
     count++;
     console.log('Double click count: ' + count);
 });
+
+// Example 3: Mouse Enter Event
+document.getElementById('box').addEventListener('mouseenter', function() {
+    this.style.backgroundColor = 'red';
+    console.log('Mouse entered the box');
+});
