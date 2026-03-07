@@ -42,3 +42,8 @@ Object.entries(user).forEach(([key, value]) => {
 for (const key in user) {
   console.log(key, user[key]);
 }
+// Example 1: Click Event
+document.getElementById('btn1').addEventListener('click', function() {
+    console.log('Button clicked!');
+    alert('You clicked the button!');
+});
