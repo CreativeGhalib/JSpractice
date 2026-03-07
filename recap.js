@@ -61,3 +61,11 @@ document.getElementById('box').addEventListener('mouseenter', function() {
     this.style.backgroundColor = 'red';
     console.log('Mouse entered the box');
 });
+
+
+// Example 4: Mouse Leave Event
+document.getElementById('box').addEventListener('mouseleave', function() {
+    this.style.backgroundColor = 'blue';
+    console.log('Mouse left the box');
+});
+
