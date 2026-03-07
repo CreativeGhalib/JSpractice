@@ -86,3 +86,9 @@ document.getElementById('input2').addEventListener('focus', function() {
     console.log('Input focused');
 });
 
+// Example 8: Submit Event (form)
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    console.log('Form submitted');
+    alert('Form has been submitted!');
+});
