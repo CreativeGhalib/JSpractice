@@ -47,3 +47,11 @@ document.getElementById('btn1').addEventListener('click', function() {
     console.log('Button clicked!');
     alert('You clicked the button!');
 });
+
+
+// Example 2: Double Click Event
+let count = 0;
+document.getElementById('btn2').addEventListener('dblclick', function() {
+    count++;
+    console.log('Double click count: ' + count);
+});
