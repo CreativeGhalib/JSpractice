@@ -80,4 +80,9 @@ document.getElementById('input').addEventListener('keypress', function(event) {
 document.getElementById('select').addEventListener('change', function() {
     console.log('Selected value: ' + this.value);
 });
+// Example 7: Focus Event
+document.getElementById('input2').addEventListener('focus', function() {
+    this.style.border = '2px solid green';
+    console.log('Input focused');
+});
 
