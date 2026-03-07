@@ -92,3 +92,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
     console.log('Form submitted');
     alert('Form has been submitted!');
 });
+// Example 9: Input Event (real-time typing)
+document.getElementById('textInput').addEventListener('input', function() {
+    console.log('Current value: ' + this.value);
+    document.getElementById('output').textContent = this.value;
+});
