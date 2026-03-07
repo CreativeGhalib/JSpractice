@@ -97,3 +97,14 @@ document.getElementById('textInput').addEventListener('input', function() {
     console.log('Current value: ' + this.value);
     document.getElementById('output').textContent = this.value;
 });
+
+
+// Example 10: Scroll Event
+window.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+    console.log('Scroll position: ' + scrollPosition);
+
+    if (scrollPosition > 100) {
+        console.log('Scrolled more than 100px');
+    }
+});
