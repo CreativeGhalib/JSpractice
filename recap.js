@@ -75,3 +75,9 @@ document.getElementById('input').addEventListener('keypress', function(event) {
     console.log('Key pressed: ' + event.key);
 });
 
+
+// Example 6: Change Event (dropdown/select)
+document.getElementById('select').addEventListener('change', function() {
+    console.log('Selected value: ' + this.value);
+});
+
