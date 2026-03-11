@@ -11,4 +11,6 @@ localStorage.removeItem('name');
 // 4. store a number in localStorage
 localStorage.setItem('age', 25);
 
-/
+// 5. get the age and convert it to a number
+let age = Number(localStorage.getItem('age'));
+console.log(age, typeof age);
