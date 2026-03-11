@@ -50,6 +50,15 @@
 // inc(); // 2
 
 
+// Auto-update greeting text as user types in the name input
+const nameInputEl = document.getElementById('name-input');
+const greetingTextEl = document.getElementById('greeting-text');
+if (nameInputEl && greetingTextEl) {
+  nameInputEl.addEventListener('input', function () {
+    greetingTextEl.innerText = this.value || 'Guest';
+  });
+}
+
 const loadData = () => {
   fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then(response => response.json())
