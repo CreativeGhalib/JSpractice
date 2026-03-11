@@ -5,3 +5,7 @@ localStorage.setItem('name', 'Rahim');
 let name = localStorage.getItem('name');
 console.log(name);
 
+// 3. delete the name from localStorage
+localStorage.removeItem('name');
+
+/
