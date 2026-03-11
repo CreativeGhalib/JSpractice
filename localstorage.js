@@ -25,4 +25,3 @@ console.log(storedUser.name);
 
 // 8. clear everything from localStorage
 localStorage.clear();
-
