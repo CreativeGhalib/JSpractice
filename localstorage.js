@@ -8,4 +8,7 @@ console.log(name);
 // 3. delete the name from localStorage
 localStorage.removeItem('name');
 
+// 4. store a number in localStorage
+localStorage.setItem('age', 25);
+
 /
