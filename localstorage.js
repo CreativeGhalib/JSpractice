@@ -19,4 +19,10 @@ console.log(age, typeof age);
 let user = { name: 'Karim', age: 30 };
 localStorage.setItem('user', JSON.stringify(user));
 
+// 7. get the object back from localStorage
+let storedUser = JSON.parse(localStorage.getItem('user'));
+console.log(storedUser.name);
+
+// 8. clear everything from localStorage
+localStorage.clear();
 
