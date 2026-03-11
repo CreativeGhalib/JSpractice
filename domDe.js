@@ -17,8 +17,7 @@ document.getElementById('addname-btn')
     const newP = document.createElement('p');
     newP.innerText = newName;
     nameContainer.appendChild(newP);
-    nameInput.value=
-
+    nameInput.value = '';
 })
 
 
