@@ -14,3 +14,9 @@ localStorage.setItem('age', 25);
 // 5. get the age and convert it to a number
 let age = Number(localStorage.getItem('age'));
 console.log(age, typeof age);
+
+// 6. store an object in localStorage
+let user = { name: 'Karim', age: 30 };
+localStorage.setItem('user', JSON.stringify(user));
+
+
